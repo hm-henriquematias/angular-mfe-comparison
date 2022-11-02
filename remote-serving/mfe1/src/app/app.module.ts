@@ -19,6 +19,6 @@ export class AppModule {
   constructor(private injector: Injector) { }
   ngDoBootstrap() {
     const custom = createCustomElement(AppComponent, { injector: this.injector });
-    customElements.define('mfe1', custom);
+    customElements.define('angular-mfe1', custom);
   }
 }
